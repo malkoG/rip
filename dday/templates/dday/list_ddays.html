@@ -1,0 +1,33 @@
+{% extends 'main_page/base_layout.html' %}
+
+{% block content %}
+<div id="dday-body">
+    <div>
+        현재 <big><big id="corpse-count">0</big></big>명이 제대를 기다리고 있습니다.
+    </div>
+    <div id="dday-list">
+        {# 나중에 API 요청으로 바꿀 예정 #}
+        {% for dday in ddays %}
+            <div class="dday-entry">
+                <div>{{ dday.title }}</div>
+                <div>{{ dday.start_date }}</div>
+                <div>{{ dday.end_date }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block additional_javascript %}
+<script>
+/*
+ * Javascript로 API 요청
+ */
+
+/*
+$(body).ready({
+
+});
+*/
+</script>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'main_page/base_layout.html' %}
+
+{% block content %}
+    <form action="/add_dday" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">
+            DDAY 등록하기
+        </button>
+    </form>
+{% endblock %}
+
+{% block additional_javascript %}
+<script>
+$(document).ready(function() {
+    $("#dday-start-date").datepicker({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달'
+    });
+
+    $("#dday-end-date").datepicker({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달'
+    });
+})
+</script>
+{% endblock %}

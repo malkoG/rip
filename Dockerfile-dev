@@ -1,0 +1,16 @@
+FROM python:3
+
+
+RUN apt-get update &&\
+    apt-get -y install \
+    libpq-dev \
+    python-dev
+
+WORKDIR /app
+
+RUN pip install pipenv
+
+RUN pipenv install
+
+ADD ./start-dev.sh /start-dev.sh
+RUN chmod +x /*.sh
