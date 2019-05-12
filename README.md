@@ -11,4 +11,5 @@
 
 ### Frontend
 * [ ] 잔여일 수를 나타내는 게이지바 구현
+* [ ] 애니메이션 효과 추가(페이드인/아웃)
 * [ ] jQuery -> React Migration
