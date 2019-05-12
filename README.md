@@ -11,3 +11,4 @@
 
 ### Frontend
 * [ ] 잔여일 수를 나타내는 게이지바 구현
+* [ ] jQuery -> React Migration
