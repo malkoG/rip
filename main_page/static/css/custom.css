@@ -1,0 +1,21 @@
+
+body {
+    background-color: darkslateblue;
+}
+
+#main-content {
+    top: 100px;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+
+
+    background-color: white;
+
+    min-height: 300px;
+}
